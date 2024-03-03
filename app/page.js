@@ -120,7 +120,7 @@ function Home() {
                   alt="Profile"
                 />
                 <div>
-                  <h2 className="font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
+                  <h2 className="font-extrabold font-InterBlack dark:text-white text-black text-3xl">
                     Arjun Vijay Prakash
                   </h2>
                   <Link href="https://twitter.com/harshii04">
@@ -133,14 +133,14 @@ function Home() {
                 <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold">
                   About Me
                 </h3>
-                <p className="dark:text-neutral-300 font-InterMedium text-sm lg:text-lg mt-3 light:text-slate-800">
+                <p className="dark:text-neutral-300 font-InterMedium text-sm lg:text-lg mt-3 text-slate-800">
                   Passionate Talented 14yo Aspiring Full-Stack Developer(MERN), Writer(20K+ Followers) and Student(Grade 8th) by Profession from India 🇮🇳
                 </p>
 
                 <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
                   Achievements
                 </h3>
-                <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
+                <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg text-slate-800">
                   <ul>
                     <li>👨‍💻 Learnt Full Stack Dev at 14</li>
                     <li>🛠 Made 20+ Projects Using MERN</li>

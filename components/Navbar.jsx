@@ -82,7 +82,7 @@ function Navbar() {
         onMouseLeave={() => mouseX.set(Infinity)}
         className="fixed z-50 flex bottom-8 left-1/2 -translate-x-1/2"
       >
-        <div className="flex items-end h-16 gap-2 px-4 pb-1.5 mx-auto outline-0 rounded-2xl box-gen border border-slate-500 backdrop-blur-md dark:ring-[#1a1a1a]">
+        <div className="flex items-end h-16 gap-2 px-4 pb-1.5 mx-auto outline-0 rounded-2xl box-gen border border-slate-500 backdrop-blur-md dark:ring-[#1a1a1a] light:bg-slate-200">
           {generalLinks.map((link, i) => {
             return (
               <div key={i}>
@@ -98,6 +98,7 @@ function Navbar() {
               </div>
             );
           })}
+
           <hr className="h-10 w-[1px] bg-neutral-300 dark:bg-neutral-700 mb-1 border-none" />
 
           <ThemeToggleNav mouseX={mouseX} />
