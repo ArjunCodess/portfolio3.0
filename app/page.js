@@ -374,7 +374,7 @@ function Home() {
                     </div>
                   </div>
 
-                  <p className="text-neutral-500 text-lg max-w-3xl">
+                  <p className="text-neutral-500 text-sm max-w-3xl">
                     {blog.subTitle}
                   </p>
 
