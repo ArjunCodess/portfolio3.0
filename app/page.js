@@ -68,8 +68,6 @@ let BLOGS = [
 ];
 
 function Home() {
-  const [show, setShow] = useState(BLOGS[0]);
-
   return (
     <>
       <link
@@ -122,7 +120,7 @@ function Home() {
                   alt="Profile"
                 />
                 <div>
-                  <h2 className="font-extrabold font-InterBlack dark:text-white text-3xl">
+                  <h2 className="font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
                     Arjun Vijay Prakash
                   </h2>
                   <Link href="https://twitter.com/harshii04">
@@ -135,14 +133,14 @@ function Home() {
                 <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold">
                   About Me
                 </h3>
-                <p className="dark:text-neutral-300 font-InterMedium text-sm lg:text-lg mt-3">
+                <p className="dark:text-neutral-300 font-InterMedium text-sm lg:text-lg mt-3 light:text-slate-800">
                   Passionate Talented 14yo Aspiring Full-Stack Developer(MERN), Writer(20K+ Followers) and Student(Grade 8th) by Profession from India 🇮🇳
                 </p>
 
                 <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
                   Achievements
                 </h3>
-                <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg">
+                <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
                   <ul>
                     <li>👨‍💻 Learnt Full Stack Dev at 14</li>
                     <li>🛠 Made 20+ Projects Using MERN</li>
@@ -153,11 +151,11 @@ function Home() {
                 </div>
 
                 <div className="flex gap-x-4">
-                  <button className="mt-10 w-1/2 border border-neutral-700/30 rounded-md p-2 lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
+                  <button className="mt-10 w-1/2 border border-neutral-700/30 rounded-md p-2 lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold light:text-slate-800">
                     <Link href="https://dev.to/arjuncodess">View Blog</Link>
                   </button>
 
-                  <button className="mt-10 w-1/2 border border-neutral-700/30 rounded-md p-2 lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold">
+                  <button className="mt-10 w-1/2 border border-neutral-700/30 rounded-md p-2 lg:w-44 bg-neutral-800/20 text-sm dark:text-neutral-400 font-semibold light:text-slate-800">
                     <Link href="https://github.com/arjuncodess">View Github</Link>
                   </button>
                 </div>
@@ -266,7 +264,7 @@ function Home() {
           {/* Marquee text */}
 
           <div>
-            <div className="marquee relative mt-16 h-10 max-w-6xl overflow-x-hidden">
+            <div className="marquee relative mt-14 h-10 max-w-6xl overflow-x-hidden">
               <div className="bg-gradient-to-r absolute z-10 w-20 rounded-md h-9 transition-all ease-in duration-200" />
               <motion.div
                 className="track"
@@ -286,7 +284,7 @@ function Home() {
 
           {/* PROJECTS  */}
 
-          <div className="lg:mt-14 mt-12">
+          <div className="lg:mt-14">
             {PROJECTS.map((each, i) => (
               <div key={i}>
                 <div className="flex flex-col lg:flex-row gap-x-8 my-6">
@@ -315,11 +313,11 @@ function Home() {
                         {each.subT}
                       </p>
                       <div className="flex gap-x-5">
-                        <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm text-black hover:tracking-widest transition-all duration-300 hover:font-bold dark:text-neutral-400 font-semibold shadow-md">
+                        <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm text-black hover:tracking-widest transition-all duration-300 hover:font-bold dark:text-neutral-400 font-semibold shadow-md light:text-slate-800">
                           <Link href={each.liveCode}>View Code</Link>
                         </button>
 
-                        <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm text-black hover:tracking-widest transition-all duration-300 hover:font-bold dark:text-neutral-400 font-semibold shadow-md">
+                        <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm text-black hover:tracking-widest transition-all duration-300 hover:font-bold dark:text-neutral-400 font-semibold shadow-md light:text-slate-800">
                         <Link href={each.liveLink}>View Live</Link>
                         </button>
                       </div>
@@ -334,7 +332,7 @@ function Home() {
           {/* Marque texts */}
 
           <div>
-            <div className="marquee my-16 h-10 relative  max-w-6xl overflow-x-hidden">
+            <div className="marquee mb-10 mt-14 h-10 relative  max-w-6xl overflow-x-hidden">
               <div className=" bg-gradient-to-r absolute z-10  to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
               <motion.div
                 className="track"
@@ -360,7 +358,7 @@ function Home() {
               {BLOGS.map((blog) => (
                 <div key={blog.title} className="my-8 p-2 rounded-md">
                   <div className="border border-neutral-700 rounded-full w-fit px-2 p-1 flex items-center">
-                    <span className="text-xs text-neutral-700 dark:text-neutral-300">
+                    <span className="text-xs text-neutral-700 dark:text-neutral-300 light:text-slate-800">
                       {blog.date}
                     </span>
                   </div>
@@ -392,18 +390,18 @@ function Home() {
           {/* Marque texts */}
 
           <div>
-            <div className="marquee relative my-16 h-10 max-w-6xl overflow-x-hidden">
-              <div className=" bg-gradient-to-r absolute z-10 w-20 rounded-md h-9 transition-all ease-in duration-200" />
+            <div className="marquee relative mt-16 h-10 max-w-6xl overflow-x-hidden">
+              <div className="bg-gradient-to-r absolute z-10 w-20 rounded-md h-9 transition-all ease-in duration-200" />
               <motion.div
                 className="track"
                 variants={marqueeVariants}
                 animate="animate"
               >
-                <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-                  ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
-                  ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
-                  ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
-                  ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
+                <div className="flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm text-neutral-700">
+                  ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT
+                  ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT
+                  ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT
+                  ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT ✦ CONTACT
                 </div>
               </motion.div>
               <div className="bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
