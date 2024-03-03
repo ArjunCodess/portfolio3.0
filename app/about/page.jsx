@@ -1,9 +1,7 @@
-import React from 'react'
-
-const about = () => {
+export default function About() {
   return (
-    <div className='h-screen'>about page</div>
-  )
+    <section>
+      about
+    </section>
+  );
 }
-
-export default about

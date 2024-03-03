@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+} */
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  /* will-change: transform; */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
