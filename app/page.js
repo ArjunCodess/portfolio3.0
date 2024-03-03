@@ -2,11 +2,12 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import logo from '../public/logo.jpeg'
+import logo from '../assets/logo.jpeg'
 import Image from "next/image";
 import img1 from '../assets/img1.png';
 
 import { motion } from "framer-motion";
+import Contact from "../components/Contact";
 
 const marqueeVariants = {
   animate: {
@@ -57,7 +58,7 @@ let BLOGS = [
     link: "https://dev.to/arjuncodess/the-ultimate-developers-toolkit-4a7f",
   },
   {
-    date: "Dec 2022",
+    date: "Dec 2023",
     title: "The Top 10 GitHub Repositories Making Waves 🌊📊",
     reactions: "271+ Reactions",
     subTitle:
@@ -92,6 +93,12 @@ function Home() {
               animate="animate"
             >
               <div className="flex gap-x-5 mt-2 uppercase font-semibold justify-evenly text-base text-neutral-400">
+                DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
+                DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
+                DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
+                DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
+                DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
+                DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
                 DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
                 DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
                 DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
@@ -399,22 +406,11 @@ function Home() {
                   ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS ✦ CONTACTS
                 </div>
               </motion.div>
-              <div className=" bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
+              <div className="bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
             </div>
           </div>
 
-          <div>
-            <p className="text-lg ">
-              I take pleasure in meeting new people and am enthusiastic about
-              assisting with any queries you may have.
-            </p>
-
-            <p className="mt-4">
-              Additionally, I love discussing forgotten or unfinished PROJECTS  and
-              exploring the fascinating topic of how artificial intelligence could
-              potentially dominate the world.
-            </p>
-          </div>
+          <Contact />
         </div>
       </div>
     </>

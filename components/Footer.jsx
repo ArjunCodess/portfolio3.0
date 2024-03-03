@@ -2,10 +2,11 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" my-36 text-center">
-      <p className="dark:text-neutral-600 text-base font-InterBold">
-      "The only way to do great work is to love what you do." - Steve Jobs
+    <div className="px-10 mb-48 lg:mb-34 mt-20 lg:mt-10 text-center">
+      <p className="dark:text-neutral-600 font-InterBold text-lg font-semibold">
+      "The only way to do great work is to love what you do."
       </p>
+      <p className="">- Steve Jobs</p>
     </div>
   );
 }
