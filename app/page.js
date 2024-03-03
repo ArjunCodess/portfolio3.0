@@ -107,7 +107,7 @@ function Home() {
                 DEVELOPER 👨‍💻 WRITER ✍️ STUDENT 👨‍🎓
               </div>
             </motion.div>
-            <div className=" bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
+            <div className="bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
           </div>
 
           <section className="lg:flex lg:flex-row">
@@ -213,7 +213,7 @@ function Home() {
             </div>
 
             {/* mobile */}
-            <div className="mt-12">
+            <div className="mt-4">
               <h3 className="lg:hidden inline-block text-neutral-500 text-xs font-InterBold uppercase font-bold my-10">
                 Socials
               </h3>
