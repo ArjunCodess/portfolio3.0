@@ -213,7 +213,7 @@ function Home() {
             </div>
 
             {/* mobile */}
-            <div className="mt-4">
+            <div className="">
               <h3 className="lg:hidden inline-block text-neutral-500 text-xs font-InterBold uppercase font-bold my-10">
                 Socials
               </h3>
