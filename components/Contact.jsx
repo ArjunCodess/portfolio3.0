@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
     return (
         <section className="light:bg-white dark:bg-gray-900">
             <div className="py-8 lg:pt-16 mx-auto max-w-screen-md">
-                <p className="mb-8 lg:mb-16 font-light text-center light:text-gray-500 dark:text-gray-400 sm:text-xl">Having a project in mind or looking for some chit-chat, I'm always ready!</p>
+                <p className="mb-8 lg:mb-16 font-light text-center light:text-gray-500 dark:text-gray-400 sm:text-xl">Having a project in mind or looking for some chit-chat, I&apos;m always ready!</p>
                 <form
                     method="POST"
                     action="https://getform.io/f/ffb58dee-b77e-4202-bda5-1da637ea6f33"
