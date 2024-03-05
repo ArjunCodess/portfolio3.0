@@ -1,26 +1,27 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import logo from '../assets/logo.jpeg'
 import Image from "next/image";
-import img1 from '../assets/img1.png';
 
 import { motion } from "framer-motion";
 import Contact from "../components/Contact";
 
+import img1 from '../assets/img1.png';
+
 const marqueeVariants = {
-  animate: {
-    x: [0, -1035],
-    transition: {
-      x: {
-        repeat: Infinity,
-        repeatType: "loop",
-        duration: 11,
-        ease: "linear",
-      },
+    animate: {
+        x: [0, -1035],
+        transition: {
+            x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 11,
+                ease: "linear",
+            },
+        },
     },
-  },
 };
 
 const GithubLink = "https://github.com/ArjunCodess";
@@ -30,41 +31,41 @@ const TwitterLink = "https://twitter.com/arjuncodess";
 const LinkTree = "https://linktr.ee/ArjunCodess";
 
 const PROJECTS = [
-  {
-    imgLink: img1,
-    year: '2024',
-    title: "PalettePro: The Color Palette Generator",
-    subT: "Upload an image, and it will extract hex color names and generate palettes for your creative projects.",
-    liveCode: "https://github.com/ArjunCodess/palettepro",
-    liveLink: "https://palettepro.vercel.app/",
-  },
+    {
+        imgLink: img1,
+        year: '2024',
+        title: "PalettePro: The Color Palette Generator",
+        subT: "Upload an image, and it will extract hex color names and generate palettes for your creative projects.",
+        liveCode: "https://github.com/ArjunCodess/palettepro",
+        liveLink: "https://palettepro.vercel.app/",
+    },
 ];
 
 let BLOGS = [
-  {
-    date: "Jan 2024",
-    title: "14 Things To Check Before Deploying a Website 👨‍💻🔥",
-    reactions: "570+ Reactions",
-    subTitle:
-      "Dropping a website out into the wild web is a big deal, so making sure every last detail is tightened up first is key...",
-    link: "https://dev.to/arjuncodess/14-things-to-check-before-deploying-a-website-49ee",
-  },
-  {
-    date: "Jan 2024",
-    title: "🌟 The Ultimate Developer's Toolkit 👨‍💻",
-    reactions: "294+ Reactions",
-    subTitle:
-      "I always felt a bit lost when I was starting on my programming journey. It's true — it was a very frustrating experience. Maybe you're feeling a little frustrated, too!...",
-    link: "https://dev.to/arjuncodess/the-ultimate-developers-toolkit-4a7f",
-  },
-  {
-    date: "Dec 2023",
-    title: "The Top 10 GitHub Repositories Making Waves 🌊📊",
-    reactions: "271+ Reactions",
-    subTitle:
-      "GitHub, the popular online platform for software and web development collaboration, provides helpful tools to optimize processes...",
-    link: "https://dev.to/arjuncodess/the-top-10-github-repositories-making-waves-4p1o",
-  },
+    {
+        date: "Jan 2024",
+        title: "14 Things To Check Before Deploying a Website 👨‍💻🔥",
+        reactions: "570+ Reactions",
+        subTitle:
+            "Dropping a website out into the wild web is a big deal, so making sure every last detail is tightened up first is key...",
+        link: "https://dev.to/arjuncodess/14-things-to-check-before-deploying-a-website-49ee",
+    },
+    {
+        date: "Jan 2024",
+        title: "🌟 The Ultimate Developer's Toolkit 👨‍💻",
+        reactions: "294+ Reactions",
+        subTitle:
+            "I always felt a bit lost when I was starting on my programming journey. It's true — it was a very frustrating experience. Maybe you're feeling a little frustrated, too!...",
+        link: "https://dev.to/arjuncodess/the-ultimate-developers-toolkit-4a7f",
+    },
+    {
+        date: "Dec 2023",
+        title: "The Top 10 GitHub Repositories Making Waves 🌊📊",
+        reactions: "271+ Reactions",
+        subTitle:
+            "GitHub, the popular online platform for software and web development collaboration, provides helpful tools to optimize processes...",
+        link: "https://dev.to/arjuncodess/the-top-10-github-repositories-making-waves-4p1o",
+    },
 ];
 
 function Home() {
@@ -120,11 +121,11 @@ function Home() {
                   alt="Profile"
                 />
                 <div>
-                  <h2 className="font-extrabold font-InterBlack dark:text-white text-black text-3xl">
+                  <h2 className="font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
                     Arjun Vijay Prakash
                   </h2>
-                  <Link href="https://twitter.com/harshii04">
-                    <span className="text-neutral-500 ">@ArjunCodess</span>
+                  <Link href="https://twitter.com/arjuncodess">
+                    <span className="">@ArjunCodess</span>
                   </Link>
                 </div>
               </div>
@@ -133,14 +134,14 @@ function Home() {
                 <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold">
                   About Me
                 </h3>
-                <p className="dark:text-neutral-300 font-InterMedium text-sm lg:text-lg mt-3 text-slate-800">
+                <p className="dark:text-neutral-300 font-InterMedium text-sm lg:text-lg mt-3 light:text-slate-800">
                   Passionate Talented 14yo Aspiring Full-Stack Developer(MERN), Writer(20K+ Followers) and Student(Grade 8th) by Profession from India 🇮🇳
                 </p>
 
                 <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
                   Achievements
                 </h3>
-                <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg text-slate-800">
+                <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
                   <ul>
                     <li>👨‍💻 Learnt Full Stack Dev at 14</li>
                     <li>🛠 Made 20+ Projects Using MERN</li>
@@ -358,7 +359,7 @@ function Home() {
               {BLOGS.map((blog) => (
                 <div key={blog.title} className="my-8 p-2 rounded-md">
                   <div className="border border-neutral-700 rounded-full w-fit px-2 p-1 flex items-center">
-                    <span className="text-xs text-neutral-700 dark:text-neutral-300 light:text-slate-800">
+                    <span className="text-xs light:text-neutral-700 dark:text-neutral-300">
                       {blog.date}
                     </span>
                   </div>
