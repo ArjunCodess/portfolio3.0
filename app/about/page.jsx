@@ -7,7 +7,7 @@ import img from '../../assets/img.jpeg';
 function page() {
   return (
     <div>
-      <div className="relative max-w-5xl mx-auto px-8 pb-20">
+      <div className="relative max-w-5xl mx-auto px-4 pb-20">
         <div className="relative mt-14">
           <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
             About me
