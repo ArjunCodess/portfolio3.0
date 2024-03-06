@@ -79,7 +79,7 @@ function Home() {
         referrerPolicy="no-referrer"
       />
 
-      <div className="max-w-5xl mx-auto px-10">
+      <div className="max-w-5xl mx-auto px-5">
 
         <div className="mt-20 lg:mt-32">
 
@@ -112,7 +112,7 @@ function Home() {
           <section className="lg:flex lg:flex-row">
 
             <div className="lg:w-11/12">
-              <div className="flex gap-x-4">
+              <div className="flex gap-x-3">
                 <Image
                   width={300}
                   height={300}

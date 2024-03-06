@@ -1,15 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import { TbArrowBackUp, TbBrandVscode } from "react-icons/tb";
-import {
-  SiNotion,
-  SiAdobeaftereffects,
-  SiFigma,
-  SiSpotify,
-  SiDiscord,
-  SiGooglechrome,
-} from "react-icons/si";
+import { TbArrowBackUp } from "react-icons/tb";
 import Image from "next/image";
+import img from '../../assets/img.jpeg'
 
 function page() {
   return (
@@ -27,34 +20,86 @@ function page() {
         </div>
 
         <div className="mt-10">
+          <h2 className="font-bold font-InterBlack dark:text-white light:text-black text-lg md:text-xl lg:text-2xl mb-8 text-center lg:mx-40">
+            Passionate Talented Young Full-Stack Developer, Writer and Student by Profession from India 🇮🇳</h2>
           <Image
             width={384}
             height={384}
             className="w-full h-96 rounded-lg object-cover"
-            src="https://images.unsplash.com/photo-1709310875357-dd82b6a761c2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={img}
             alt=""
           />
-          <h4 className="my-11 font-InterBold">How it all started</h4>
 
-          <p className="my-9">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nemo nulla! Facilis dolorum dolore perferendis quia veniam expedita ab fugit. Magni sunt deleniti corrupti, laudantium commodi fuga, eligendi rem ad blanditiis pariatur cupiditate nulla eum quisquam. Quis fuga, ab, necessitatibus suscipit nam doloribus est facilis magnam aut neque, molestias velit asperiores nemo. Pariatur magni voluptate magnam aut et ratione id.
+          <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold mt-10">
+            How It All Started
+          </h3>
+
+          <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
+            Hello! My name is Arjun Vijay Prakash. I'm a 14 year full stack developer, from India. With 4 years of experience in web development I've grown passionate about designing practical websites that cater to my clients needs. Engaging in hackathons and coding contests has enabled me to demonstrate my proficiency in both end and back end development.
           </p>
 
-          <h4 className="my-10 font-InterBold">What’s to come</h4>
-
-          <p className="my-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nemo nulla! Facilis dolorum dolore perferendis quia veniam expedita ab fugit. Magni sunt deleniti corrupti, laudantium commodi fuga, eligendi rem ad blanditiis pariatur cupiditate nulla eum quisquam. Quis fuga, ab, necessitatibus suscipit nam doloribus est facilis magnam aut neque, molestias velit asperiores nemo. Pariatur magni voluptate magnam aut et ratione id.
+          <p className="text-sm md:text-base lg:text-lg">
+            As a developer I prioritize keeping of the industry trends and technologies. My aim is to craft websites that not boast aesthetics but also deliver an outstanding user experience. If you're seeking an devoted developer to breathe life into your website your search ends here. I am confident, in my ability to deliver a top notch product that surpasses your expectations.
           </p>
 
-          <h4 className="font-InterBold">My Stack</h4>
+          <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
+            Achievements
+          </h3>
+          <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
+            <ul>
+              <li>👨‍💻 Learnt Full Stack Dev at 14</li>
+              <li>🛠 Made 20+ Projects Using MERN</li>
+              <li>💵 Made my first 140$ w/ Freelancing</li>
+              <li>🌟 Hit 20K+ Followers on Blog</li>
+              <li>⚡️ Listed as the Top Writer on DEV.to</li>
+            </ul>
+          </div>
 
-          <div className="flex gap-x-8 justify-around  mt-16">
-            <SiNotion className="text-2xl" />
-            <SiAdobeaftereffects className="text-[#00005F] text-2xl" />
-            <SiFigma className="text-[#00BDFD] text-2xl" />
-            <SiSpotify className="text-[#00DA4C] text-2xl" />
-            <SiDiscord className="text-[#5264FA] text-2xl" />
-            <SiGooglechrome className="text-2xl" />
+          {/* desktop */}
+          <div className="md:text-right md:block hidden">
+            <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
+              Personality Traits
+            </h3>
+            <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
+              <ul>
+                <li>Self-motivated, driven to achieve my goals 🚀</li>
+                <li>Curious and always eager to learn new things 🧠</li>
+                <li>Anti-Social, doesn't enjoy working with others 👤</li>
+                <li>Small-circle, small group of like-minded people 🫂</li>
+                <li>Open-minded, enjoy hearing different opinions 💬</li>
+                <li>Detail-oriented, pay attention to the little things 🤓</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* mobile */}
+          <div className="md:text-right block md:hidden">
+            <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
+              Personality Traits
+            </h3>
+            <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
+              <ul>
+                <li>🚀 Self-motivated</li>
+                <li>🧠 Curious</li>
+                <li>👤 Anti-Social</li>
+                <li>🫂 Small-circle</li>
+                <li>💬 Open-minded</li>
+                <li>🤓 Detail-oriented</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
+            Hobbies & Interests
+          </h3>
+          <div className="dark:text-neutral-300 font-InterMedium mt-3 text-sm lg:text-lg light:text-slate-800">
+            <ul>
+              <li>📚 Enthusiastic reader of non-fiction and self-help books</li>
+              <li>👨🏼‍💻 Love coding and building stuff out of code</li>
+              <li>✍️ Consistent writer of general knowledge, practical tips and dev stuff</li>
+              <li>🎵 Music lover, compiling and sharing underrated hip-hop songs</li>
+              <li>🎨 Exploring the world of visual arts, with a particular interest in sketching</li>
+            </ul>
           </div>
         </div>
       </div>
