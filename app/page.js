@@ -10,18 +10,20 @@ import Contact from "../components/Contact";
 
 import img1 from '../assets/img1.png';
 
+import { SparklesCore } from "../components/ui/sparkles";
+
 const marqueeVariants = {
-    animate: {
-        x: [0, -1035],
-        transition: {
-            x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 11,
-                ease: "linear",
-            },
-        },
+  animate: {
+    x: [0, -1035],
+    transition: {
+      x: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 11,
+        ease: "linear",
+      },
     },
+  },
 };
 
 const GithubLink = "https://github.com/ArjunCodess";
@@ -31,41 +33,41 @@ const TwitterLink = "https://twitter.com/arjuncodess";
 const LinkTree = "https://linktr.ee/ArjunCodess";
 
 const PROJECTS = [
-    {
-        imgLink: img1,
-        year: '2024',
-        title: "PalettePro: The Color Palette Generator",
-        subT: "Upload an image, and it will extract hex color names and generate palettes for your creative projects.",
-        liveCode: "https://github.com/ArjunCodess/palettepro",
-        liveLink: "https://palettepro.vercel.app/",
-    },
+  {
+    imgLink: img1,
+    year: '2024',
+    title: "PalettePro: The Color Palette Generator",
+    subT: "Upload an image, and it will extract hex color names and generate palettes for your creative projects.",
+    liveCode: "https://github.com/ArjunCodess/palettepro",
+    liveLink: "https://palettepro.vercel.app/",
+  },
 ];
 
 let BLOGS = [
-    {
-        date: "Jan 2024",
-        title: "14 Things To Check Before Deploying a Website 👨‍💻🔥",
-        reactions: "570+ Reactions",
-        subTitle:
-            "Dropping a website out into the wild web is a big deal, so making sure every last detail is tightened up first is key...",
-        link: "https://dev.to/arjuncodess/14-things-to-check-before-deploying-a-website-49ee",
-    },
-    {
-        date: "Jan 2024",
-        title: "🌟 The Ultimate Developer's Toolkit 👨‍💻",
-        reactions: "294+ Reactions",
-        subTitle:
-            "I always felt a bit lost when I was starting on my programming journey. It's true — it was a very frustrating experience. Maybe you're feeling a little frustrated, too!...",
-        link: "https://dev.to/arjuncodess/the-ultimate-developers-toolkit-4a7f",
-    },
-    {
-        date: "Dec 2023",
-        title: "The Top 10 GitHub Repositories Making Waves 🌊📊",
-        reactions: "271+ Reactions",
-        subTitle:
-            "GitHub, the popular online platform for software and web development collaboration, provides helpful tools to optimize processes...",
-        link: "https://dev.to/arjuncodess/the-top-10-github-repositories-making-waves-4p1o",
-    },
+  {
+    date: "Jan 2024",
+    title: "14 Things To Check Before Deploying a Website 👨‍💻🔥",
+    reactions: "570+ Reactions",
+    subTitle:
+      "Dropping a website out into the wild web is a big deal, so making sure every last detail is tightened up first is key...",
+    link: "https://dev.to/arjuncodess/14-things-to-check-before-deploying-a-website-49ee",
+  },
+  {
+    date: "Jan 2024",
+    title: "🌟 The Ultimate Developer's Toolkit 👨‍💻",
+    reactions: "294+ Reactions",
+    subTitle:
+      "I always felt a bit lost when I was starting on my programming journey. It's true — it was a very frustrating experience. Maybe you're feeling a little frustrated, too!...",
+    link: "https://dev.to/arjuncodess/the-ultimate-developers-toolkit-4a7f",
+  },
+  {
+    date: "Dec 2023",
+    title: "The Top 10 GitHub Repositories Making Waves 🌊📊",
+    reactions: "271+ Reactions",
+    subTitle:
+      "GitHub, the popular online platform for software and web development collaboration, provides helpful tools to optimize processes...",
+    link: "https://dev.to/arjuncodess/the-top-10-github-repositories-making-waves-4p1o",
+  },
 ];
 
 function Home() {
@@ -80,6 +82,17 @@ function Home() {
       />
 
       <div className="max-w-5xl mx-auto px-5">
+        <div className="w-full absolute inset-0 h-screen">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#777"
+          />
+        </div>
 
         <div className="mt-20 lg:mt-32">
 
@@ -319,7 +332,7 @@ function Home() {
                         </button>
 
                         <button className="mt-11 border border-neutral-700/30 rounded-xl p-2 px-7 lg:w-44 w-full bg-white dark:bg-neutral-800/10 text-sm text-black hover:tracking-widest transition-all duration-300 hover:font-bold dark:text-neutral-400 font-semibold shadow-md light:text-slate-800">
-                        <Link href={each.liveLink}>View Live</Link>
+                          <Link href={each.liveLink}>View Live</Link>
                         </button>
                       </div>
                     </div>

@@ -31,7 +31,7 @@ function page() {
           />
 
           <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold mt-10">
-            How It All Started
+            About Me
           </h3>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
