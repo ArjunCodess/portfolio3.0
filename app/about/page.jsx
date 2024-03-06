@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { TbArrowBackUp } from "react-icons/tb";
 import Image from "next/image";
-import img from '../../assets/img.jpeg'
+import img from '../../assets/img.jpeg';
 
 function page() {
   return (
@@ -35,11 +35,11 @@ function page() {
           </h3>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
-            Hello! My name is Arjun Vijay Prakash. I'm a 14 year full stack developer, from India. With 4 years of experience in web development I've grown passionate about designing practical websites that cater to my clients needs. Engaging in hackathons and coding contests has enabled me to demonstrate my proficiency in both end and back end development.
+            Hello! My name is Arjun Vijay Prakash. I&apos;m a 14 year full stack developer, from India. With 4 years of experience in web development I&apos;ve grown passionate about designing practical websites that cater to my clients needs. Engaging in hackathons and coding contests has enabled me to demonstrate my proficiency in both end and back end development.
           </p>
 
           <p className="text-sm md:text-base lg:text-lg">
-            As a developer I prioritize keeping of the industry trends and technologies. My aim is to craft websites that not boast aesthetics but also deliver an outstanding user experience. If you're seeking an devoted developer to breathe life into your website your search ends here. I am confident, in my ability to deliver a top notch product that surpasses your expectations.
+            As a developer I prioritize keeping of the industry trends and technologies. My aim is to craft websites that not boast aesthetics but also deliver an outstanding user experience. If you&apos;re seeking an devoted developer to breathe life into your website your search ends here. I am confident, in my ability to deliver a top notch product that surpasses your expectations.
           </p>
 
           <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
@@ -64,7 +64,7 @@ function page() {
               <ul>
                 <li>Self-motivated, driven to achieve my goals 🚀</li>
                 <li>Curious and always eager to learn new things 🧠</li>
-                <li>Anti-Social, doesn't enjoy working with others 👤</li>
+                <li>Anti-Social, doesn&apos;t enjoy working with others 👤</li>
                 <li>Small-circle, small group of like-minded people 🫂</li>
                 <li>Open-minded, enjoy hearing different opinions 💬</li>
                 <li>Detail-oriented, pay attention to the little things 🤓</li>
