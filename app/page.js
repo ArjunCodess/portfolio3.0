@@ -352,11 +352,11 @@ function Home() {
                 animate="animate"
               >
                 <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
                 </div>
               </motion.div>
               <div className=" bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
