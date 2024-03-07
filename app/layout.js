@@ -1,7 +1,7 @@
 import Theming from '../theme/Theming';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
-import AnimatedCursor from '../components/AnimatedCursor';
+import { SparklesCore } from "../components/ui/sparkles";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
       <body>
         <Theming>
           <Header />
-          {/* <div className='md:inline-block hidden'><AnimatedCursor /></div> */}
           {children}
           <Footer />
         </Theming>

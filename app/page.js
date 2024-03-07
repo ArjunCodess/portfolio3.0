@@ -7,6 +7,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 import Contact from "../components/Contact";
+import Testimonials from "../components/Testimonials";
 
 import img1 from '../assets/img1.png';
 
@@ -137,9 +138,7 @@ function Home() {
                   <h2 className="font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
                     Arjun Vijay Prakash
                   </h2>
-                  <Link href="https://twitter.com/arjuncodess">
-                    <span className="">@ArjunCodess</span>
-                  </Link>
+                  <span>@ArjunCodess</span>
                 </div>
               </div>
 
@@ -342,11 +341,34 @@ function Home() {
             ))}
           </div>
 
-
           {/* Marque texts */}
 
           <div>
             <div className="marquee mb-10 mt-14 h-10 relative  max-w-6xl overflow-x-hidden">
+              <div className=" bg-gradient-to-r absolute z-10  to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
+              <motion.div
+                className="track"
+                variants={marqueeVariants}
+                animate="animate"
+              >
+                <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
+                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                  REVIEWS ✦ HERE'S WHAT THEY SAY ✦ TESTIMONIALS ✦
+                </div>
+              </motion.div>
+              <div className=" bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
+            </div>
+          </div>
+
+          <Testimonials />
+
+          {/* Marque texts */}
+
+          <div>
+            <div className="marquee mb-10 mt-10 h-10 relative  max-w-6xl overflow-x-hidden">
               <div className=" bg-gradient-to-r absolute z-10  to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
               <motion.div
                 className="track"
@@ -379,10 +401,11 @@ function Home() {
 
                   <div className="flex gap-x-4 my-6">
                     <div>
-                      <h1 className="font-InterBold font-extrabold lg:text-xl text-lg mb-4">{blog.title}</h1>
                       <Link href={blog.link} className="font-semibold hover:underline">
-                        {blog.reactions}
+                        <h1 className="font-InterBold font-extrabold lg:text-xl text-lg mb-4">{blog.title}</h1>
                       </Link>
+                      {blog.reactions}
+
                     </div>
                   </div>
 
