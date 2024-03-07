@@ -1,41 +1,46 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { TbArrowBackUp } from "react-icons/tb";
-
+import React from "react";
 import Link from "next/link";
 
-import Projects from '../../components/Projects';
+import { TbArrowBackUp } from "react-icons/tb";
 
-import image1 from '../../assets/img.jpeg';
+import ProjectCard from '../../components/ProjectCard';
 
-const projects = [
+const projectData = [
     {
-        imgLink: {image1},
-        title: "Redesigning the landing page for better discoveribility",
-        subT: "Redesigned 'The Product House' landing page for my take-home assignment! My goal was to create an engaging and informative showcase of their brand.",
+        title: "tweetera",
+        subtitle: "Redesigned 'The Product House' landing page for my take-home assignment! My goal was to create an engaging and informative showcase of their brand.",
+        imgLink: "/img/img.jpeg",
+        codeLink: "https://github.com/yourusername/project1",
+        liveLink: "https://example.com/project1"
     },
     {
-        imgLink: {image1},
-        title: "UI/ UX Case Study: Group Food Ordering",
-        subT: "Designed an solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+        title: "dropbox2.0",
+        subtitle: "Designed a solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+        imgLink: "/img/img.jpeg",
+        codeLink: "https://github.com/yourusername/project2",
+        liveLink: "https://example.com/project2"
     },
     {
-        imgLink: {image1},
-        title:
-            "UI/ UX Case Study: Enabling local stores to sell on WhatsApp for Businesses",
-        subT: "Designed a feature that simplifies local store sales on WhatsApp for businesses..",
+        title: "tweetera",
+        subtitle: "Redesigned 'The Product House' landing page for my take-home assignment! My goal was to create an engaging and informative showcase of their brand.",
+        imgLink: "/img/img.jpeg",
+        codeLink: "https://github.com/yourusername/project1",
+        liveLink: "https://example.com/project1"
     },
     {
-        imgLink: {image1},
-        title: "Creating Dive platform's Trivia Game",
-        subT: "Designed a trivia game to enhance user engagement during sessions on Dive platform.",
+        title: "dropbox2.0",
+        subtitle: "Designed a solution that simplifies the decision-making process and saves time for users while ordering food in a group.",
+        imgLink: "/img/img.jpeg",
+        codeLink: "https://github.com/yourusername/project2",
+        liveLink: "https://example.com/project2"
     },
 ];
 
 export default function page() {
     return (
-        <div className="relative max-w-5xl mx-auto px-8">
+        <section className="relative max-w-5xl mx-auto px-4 pb-20">
             <div className="relative mt-14">
                 <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
                     Projects
@@ -47,7 +52,19 @@ export default function page() {
                 </Link>
             </div>
 
-            <Projects projects={projects} />
-        </div>
+            <div className="flex flex-wrap justify-center gap-x-8">
+                {projectData.map((project, index) => (
+                    <ProjectCard
+                        key={index}
+                        title={project.title}
+                        subtitle={project.subtitle}
+                        imgLink={project.imgLink}
+                        codeLink={project.codeLink}
+                        liveLink={project.liveLink}
+                    />
+                ))}
+            </div>
+
+        </section>
     );
 }
