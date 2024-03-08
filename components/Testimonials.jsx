@@ -38,7 +38,7 @@ const projects = [
 export default function Testimonials() {
     return (
         <section>
-            <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-screen-xl px-1 sm:px-6 lg:px-8">
                 <p className="mb-8 lg:mb-12 font-light text-center light:text-slate-800 dark:text-gray-400 sm:text-xl">Here&apos;s Why You Should Hire Me</p>
                 <div className="max-w-5xl mx-auto">
                     <HoverEffect items={projects} className="" />
