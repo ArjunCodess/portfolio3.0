@@ -51,7 +51,7 @@ function page() {
           </h3>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
-            Hey there! I'm Arjun Vijay Prakash, a 14-year-old full-stack developer, writer and student from profession from India. I got into the world of coding early on and fell in love with the idea of creating things using code. With 4 years of experience in web development, I've grown passionate about designing practical websites that cater to my clients' needs.
+            Hey there! I&apos;m Arjun Vijay Prakash, a 14-year-old full-stack developer, writer and student from profession from India. I got into the world of coding early on and fell in love with the idea of creating things using code. With 4 years of experience in web development, I&apos;ve grown passionate about designing practical websites that cater to my clients&apos; needs.
           </p>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
@@ -59,7 +59,7 @@ function page() {
           </p>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
-            What sets my method of website creation apart is my priority on finding creative but practical solutions rather than getting distracted by technical details. While some developers get caught up in deciding "Which technology should I choose?", I focus on "What problem needs solving?"
+            What sets my method of website creation apart is my priority on finding creative but practical solutions rather than getting distracted by technical details. While some developers get caught up in deciding &quot;Which technology should I choose?&quot;, I focus on &quot;What problem needs solving?&quot;
           </p>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
