@@ -38,7 +38,7 @@ function page() {
           <Image
             width={384}
             height={384}
-            className="w-full h-96 rounded-lg object-cover"
+            className="w-full h-96 rounded-xl object-cover"
             src={img}
             alt=""
           />
