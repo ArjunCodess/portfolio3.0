@@ -4,119 +4,101 @@ import { TbArrowBackUp } from "react-icons/tb";
 import Image from "next/image";
 import { SparklesCore } from "../../components/ui/sparkles";
 
-import css from "../../assets/css.svg";
-import express from "../../assets/express.svg";
-import git from "../../assets/git.svg";
-import github from "../../assets/github.svg";
-import html from "../../assets/html.svg";
-import javascript from "../../assets/javascript.svg";
-import mongodb from "../../assets/mongodb.svg";
-import nextjs from "../../assets/nextjs.svg";
-import nodejs from "../../assets/nodejs.svg";
-import react from "../../assets/react.svg";
-import tailwindcss from "../../assets/tailwindcss.svg";
-import typescript from "../../assets/typescript.svg";
-import figma from "../../assets/figma.svg";
-import bootstrap from "../../assets/bootstrap.svg";
-import python from "../../assets/python.svg";
-import firebase from "../../assets/firebase.svg";
-import npm from "../../assets/npm.svg";
-import postman from "../../assets/postman.svg";
-import vscode from "../../assets/vscode.svg";
+import * as assets from "../../assets";
 
 const skills = [
   {
-    imageUrl: html,
+    imageUrl: assets.html,
     name: "HTML",
     type: "Frontend",
   },
   {
-    imageUrl: css,
+    imageUrl: assets.css,
     name: "CSS",
     type: "Frontend",
   },
   {
-    imageUrl: javascript,
+    imageUrl: assets.javascript,
     name: "JavaScript",
     type: "Frontend",
   },
   {
-    imageUrl: express,
-    name: "Express",
-    type: "Backend",
-  },
-  {
-    imageUrl: git,
-    name: "Git",
-    type: "Version Control",
-  },
-  {
-    imageUrl: github,
-    name: "GitHub",
-    type: "Version Control",
-  },
-  {
-    imageUrl: mongodb,
-    name: "MongoDB",
-    type: "Database",
-  },
-  {
-    imageUrl: nextjs,
-    name: "Next.js",
-    type: "Frontend",
-  },
-  {
-    imageUrl: nodejs,
-    name: "Node.js",
-    type: "Backend",
-  },
-  {
-    imageUrl: react,
-    name: "React",
-    type: "Frontend",
-  },
-  {
-    imageUrl: tailwindcss,
-    name: "Tailwind CSS",
-    type: "Frontend",
-  },
-  {
-    imageUrl: typescript,
+    imageUrl: assets.typescript,
     name: "TypeScript",
     type: "Frontend",
   },
   {
-    imageUrl: figma,
-    name: "Figma",
-    type: "Design",
+    imageUrl: assets.react,
+    name: "React",
+    type: "Frontend",
   },
   {
-    imageUrl: bootstrap,
+    imageUrl: assets.nextjs,
+    name: "Next.js",
+    type: "Frontend",
+  },
+  {
+    imageUrl: assets.tailwindcss,
+    name: "Tailwind CSS",
+    type: "Frontend",
+  },
+  {
+    imageUrl: assets.bootstrap,
     name: "Bootstrap",
     type: "Frontend",
   },
   {
-    imageUrl: python,
+    imageUrl: assets.nodejs,
+    name: "Node.js",
+    type: "Backend",
+  },
+  {
+    imageUrl: assets.express,
+    name: "Express",
+    type: "Backend",
+  },
+  {
+    imageUrl: assets.python,
     name: "Python",
     type: "Programming",
   },
   {
-    imageUrl: firebase,
+    imageUrl: assets.git,
+    name: "Git",
+    type: "Version Control",
+  },
+  {
+    imageUrl: assets.github,
+    name: "GitHub",
+    type: "Version Control",
+  },
+  {
+    imageUrl: assets.firebase,
     name: "Firebase",
     type: "Database",
   },
   {
-    imageUrl: npm,
+    imageUrl: assets.mongodb,
+    name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: assets.figma,
+    name: "Figma",
+    type: "Design",
+  },
+  {
+    imageUrl: assets.npm,
     name: "NPM",
     type: "Package Manager",
   },
   {
-    imageUrl: postman,
+    imageUrl: assets.postman,
     name: "Postman",
     type: "API Client",
   },
   {
-    imageUrl: vscode,
+    imageUrl: assets.vscode,
     name: "Visual Studio Code",
     type: "Code Editor",
   },
@@ -139,7 +121,7 @@ function page() {
       <div className="relative max-w-5xl mx-auto px-4 pb-20">
         <div className="relative mt-14">
           <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
-            Tech Stack
+            Skills
           </h2>
           <Link href={"/"}>
             <div className=" bg-neutral-700/10 rounded-md absolute -top-2 w-12 h-8 flex items-center justify-center ">
