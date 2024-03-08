@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { TbArrowBackUp } from "react-icons/tb";
 import Image from "next/image";
+import { SparklesCore } from "../../components/ui/sparkles";
 
 import css from "../../assets/css.svg";
 import express from "../../assets/express.svg";
@@ -124,10 +125,21 @@ const skills = [
 function page() {
   return (
     <div className="lg:h-screen">
+      <div className="w-full absolute inset-0 h-screen">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#777"
+          />
+        </div>
       <div className="relative max-w-5xl mx-auto px-4 pb-20">
         <div className="relative mt-14">
           <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
-            Skills
+            Tech Stack
           </h2>
           <Link href={"/"}>
             <div className=" bg-neutral-700/10 rounded-md absolute -top-2 w-12 h-8 flex items-center justify-center ">
@@ -146,7 +158,7 @@ function page() {
                     <Image
                       src={skill.imageUrl}
                       alt={skill.name}
-                      className="w-1/2 h-1/2 object-contain"
+                      className="w-1/2 h-1/2 object-contain animate-fade-in"
                     />
                   </div>
                 </div>

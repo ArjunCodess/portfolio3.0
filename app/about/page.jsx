@@ -3,10 +3,23 @@ import React from "react";
 import { TbArrowBackUp } from "react-icons/tb";
 import Image from "next/image";
 import img from '../../assets/img.jpeg';
+import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
+import { SparklesCore } from "../../components/ui/sparkles";
 
 function page() {
   return (
     <div>
+      <div className="w-full absolute inset-0 h-screen">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#777"
+          />
+        </div>
       <div className="relative max-w-5xl mx-auto px-4 pb-20">
         <div className="relative mt-14">
           <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
@@ -21,7 +34,7 @@ function page() {
 
         <div className="mt-10">
           <h2 className="font-bold font-InterBlack dark:text-white light:text-black text-lg md:text-xl lg:text-2xl mb-8 text-center lg:mx-40">
-            Passionate Talented Young Full-Stack Developer, Writer and Student by Profession from India 🇮🇳</h2>
+            <TextGenerateEffect words="Passionate Talented Young Full-Stack Developer, Writer and Student by Profession from India 🇮🇳" /></h2>
           <Image
             width={384}
             height={384}

@@ -7,6 +7,8 @@ import { TbArrowBackUp } from "react-icons/tb";
 
 import ProjectCard from '../../components/ProjectCard';
 
+import { SparklesCore } from "../../components/ui/sparkles";
+
 const projectData = [
     {
         title: "tweetera",
@@ -40,31 +42,44 @@ const projectData = [
 
 export default function page() {
     return (
-        <section className="relative max-w-5xl mx-auto px-4 pb-20">
-            <div className="relative mt-14">
-                <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
-                    Projects
-                </h2>
-                <Link href={"/"}>
-                    <div className=" bg-neutral-700/10 rounded-md absolute -top-2 w-12 h-8 flex items-center justify-center ">
-                        <TbArrowBackUp className="dark:text-white light:text-black text-xl" />
-                    </div>
-                </Link>
+        <section>
+            <div className="w-full absolute inset-0 lg:h-screen">
+                <SparklesCore
+                    id="tsparticlesfullpage"
+                    background="transparent"
+                    minSize={0.6}
+                    maxSize={1.4}
+                    particleDensity={100}
+                    className="w-full h-full"
+                    particleColor="#777"
+                />
             </div>
+            <div className="relative max-w-5xl mx-auto px-4 pb-20">
+                <div className="relative mt-14">
+                    <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
+                        Projects
+                    </h2>
+                    <Link href={"/"}>
+                        <div className=" bg-neutral-700/10 rounded-md absolute -top-2 w-12 h-8 flex items-center justify-center ">
+                            <TbArrowBackUp className="dark:text-white light:text-black text-xl" />
+                        </div>
+                    </Link>
+                </div>
 
-            <div className="flex flex-wrap justify-center gap-x-8">
-                {projectData.map((project, index) => (
-                    <ProjectCard
-                        key={index}
-                        title={project.title}
-                        subtitle={project.subtitle}
-                        imgLink={project.imgLink}
-                        codeLink={project.codeLink}
-                        liveLink={project.liveLink}
-                    />
-                ))}
+                <div className="flex flex-wrap justify-center gap-x-8">
+                    {projectData.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            title={project.title}
+                            subtitle={project.subtitle}
+                            imgLink={project.imgLink}
+                            codeLink={project.codeLink}
+                            liveLink={project.liveLink}
+                        />
+                    ))}
+                </div>
+
             </div>
-
         </section>
     );
 }
