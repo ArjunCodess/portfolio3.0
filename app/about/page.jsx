@@ -10,16 +10,16 @@ function page() {
   return (
     <div>
       <div className="w-full absolute inset-0 h-screen">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#777"
-          />
-        </div>
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#777"
+        />
+      </div>
       <div className="relative max-w-5xl mx-auto px-4 pb-20">
         <div className="relative mt-14">
           <h2 className=" text-center font-InterBold uppercase font-extrabold font-InterBlack dark:text-white light:text-black text-3xl">
@@ -34,26 +34,38 @@ function page() {
 
         <div className="mt-10">
           <h2 className="font-bold font-InterBlack dark:text-white light:text-black text-lg md:text-xl lg:text-2xl mb-8 text-center lg:mx-40">
-            <TextGenerateEffect words="Passionate Talented Young Full-Stack Developer, Writer and Student by Profession from India 🇮🇳" /></h2>
-          <Image
+            <TextGenerateEffect words="Passionate Talented Young Full-Stack Developer, Writer and Student by Profession from India 🇮🇳" />
+          </h2>
+
+          {/* TODO: add image when have a good one */}
+          {/* <Image
             width={384}
             height={384}
             className="w-full h-96 rounded-xl object-cover"
             src={img}
             alt=""
-          />
+          /> */}
 
           <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold mt-10">
             About Me
           </h3>
 
           <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
-            Hello! My name is Arjun Vijay Prakash. I&apos;m a 14 year full stack developer, from India. With 4 years of experience in web development I&apos;ve grown passionate about designing practical websites that cater to my clients needs. Engaging in hackathons and coding contests has enabled me to demonstrate my proficiency in both end and back end development.
+            Hey there! I'm Arjun Vijay Prakash, a 14-year-old full-stack developer, writer and student from profession from India. I got into the world of coding early on and fell in love with the idea of creating things using code. With 4 years of experience in web development, I've grown passionate about designing practical websites that cater to my clients' needs.
           </p>
 
-          <p className="text-sm md:text-base lg:text-lg">
-            As a developer I prioritize keeping of the industry trends and technologies. My aim is to craft websites that not boast aesthetics but also deliver an outstanding user experience. If you&apos;re seeking an devoted developer to breathe life into your website your search ends here. I am confident, in my ability to deliver a top notch product that surpasses your expectations.
+          <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
+            To keep up with the latest trends and technologies in the field, I make sure I read articles trending and try to make content around them to maximize my reach. I also explore new tools and frameworks and stay active on tech Twitter & developer Discord communities.
           </p>
+
+          <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
+            What sets my method of website creation apart is my priority on finding creative but practical solutions rather than getting distracted by technical details. While some developers get caught up in deciding "Which technology should I choose?", I focus on "What problem needs solving?"
+          </p>
+
+          <p className="mb-9 mt-4 text-sm md:text-base lg:text-lg">
+            Moreover, I make sure that the websites I develop not only look visually appealing but also offer a flawless user experience. Using advanced technologies such as Next.js allows me to deliver top-grade UX and eye-catching UI designs that go beyond expectations.
+          </p>
+
 
           <h3 className="text-neutral-500 text-xs font-InterBold uppercase font-bold my-5">
             Achievements
