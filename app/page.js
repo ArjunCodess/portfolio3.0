@@ -363,7 +363,8 @@ function Home() {
               <div className=" bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
             </div>
           </div>
-
+          
+          {/* testimonials component */}
           <Testimonials />
 
           {/* Marque texts */}
