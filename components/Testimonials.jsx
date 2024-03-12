@@ -3,36 +3,18 @@ import { HoverEffect } from "./ui/card-hover-effect";
 const projects = [
     {
         id: 1,
-        name: "Stripe",
+        name: "Spandan",
         description:
-            "A technology company that builds economic infrastructure for the internet.",
-        rating: "4.0",
-        designation: "engineer",
+            "Your recent posts on dev.to have reignited my interest in the platform and provided valuable learning experiences. Despite concerns about declining content quality, your contributions have restored my faith in thinking that still there are some people who write valuable content. Keep up the great work!",
+        designation: "Student",
     },
-    {
-        id: 2,
-        name: "Netflix",
-        description:
-            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-        rating: "4.0",
-        designation: "engineer",
-    },
-    {
-        id: 3,
-        name: "Meta",
-        description:
-            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-        rating: "4.0",
-        designation: "engineer",
-    },
-    {
-        id: 4,
-        name: "Meta",
-        description:
-            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-        rating: "4.0",
-        designation: "engineer",
-    },
+    // {
+    //     id: 2,
+    //     name: "",
+    //     description:
+    //         "",
+    //     designation: "",
+    // },
 ];
 
 export default function Testimonials() {

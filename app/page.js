@@ -83,7 +83,7 @@ function Home() {
       />
 
       <div className="max-w-5xl mx-auto px-5">
-        <div className="w-full absolute inset-0 h-screen">
+        <div className="w-full absolute inset-0 h-screen -z-10">
           <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
@@ -184,7 +184,7 @@ function Home() {
                   <Link href={LinkTree} target="_blank" rel="noreferrer">
                     <li className="icon link mt-10">
                       <span>
-                        <i className="fas fa-link fa-spin"></i>
+                        <i className="fas fa-link "></i>
                       </span>
                     </li>
                   </Link>
@@ -192,7 +192,7 @@ function Home() {
                   <Link href={GithubLink} target="_blank" rel="noreferrer">
                     <li className="icon github my-10">
                       <span>
-                        <i className="fab fa-github fa-spin"></i>
+                        <i className="fab fa-github "></i>
                       </span>
                     </li>
                   </Link>
@@ -200,7 +200,7 @@ function Home() {
                   <Link href={TwitterLink} target="_blank" rel="noreferrer">
                     <li className="icon twitter">
                       <span>
-                        <i className="fab fa-twitter fa-spin"></i>
+                        <i className="fab fa-twitter "></i>
                       </span>
                     </li>
                   </Link>
@@ -208,7 +208,7 @@ function Home() {
                   <Link href={InstagramLink} target="_blank" rel="noreferrer">
                     <li className="icon instagram my-10">
                       <span>
-                        <i className="fab fa-instagram fa-spin"></i>
+                        <i className="fab fa-instagram "></i>
                       </span>
                     </li>
                   </Link>
@@ -216,7 +216,7 @@ function Home() {
                   <Link href={DevLink} target="_blank" rel="noreferrer">
                     <li className="icon dev">
                       <span>
-                        <i className="fab fa-dev fa-spin"></i>
+                        <i className="fab fa-dev "></i>
                       </span>
                     </li>
                   </Link>
@@ -233,7 +233,7 @@ function Home() {
                 <Link href={LinkTree} target="_blank" rel="noreferrer">
                   <li className="icon link">
                     <span>
-                      <i className="fas fa-link fa-spin"></i>
+                      <i className="fas fa-link "></i>
                     </span>
                   </li>
                 </Link>
@@ -241,7 +241,7 @@ function Home() {
                 <Link href={GithubLink} target="_blank" rel="noreferrer">
                   <li className="icon github">
                     <span>
-                      <i className="fab fa-github fa-spin"></i>
+                      <i className="fab fa-github "></i>
                     </span>
                   </li>
                 </Link>
@@ -249,7 +249,7 @@ function Home() {
                 <Link href={TwitterLink} target="_blank" rel="noreferrer">
                   <li className="icon twitter">
                     <span>
-                      <i className="fab fa-twitter fa-spin"></i>
+                      <i className="fab fa-twitter "></i>
                     </span>
                   </li>
                 </Link>
@@ -257,7 +257,7 @@ function Home() {
                 <Link href={InstagramLink} target="_blank" rel="noreferrer">
                   <li className="icon instagram">
                     <span>
-                      <i className="fab fa-instagram fa-spin"></i>
+                      <i className="fab fa-instagram "></i>
                     </span>
                   </li>
                 </Link>
@@ -265,7 +265,7 @@ function Home() {
                 <Link href={DevLink} target="_blank" rel="noreferrer">
                   <li className="icon dev">
                     <span>
-                      <i className="fab fa-dev fa-spin"></i>
+                      <i className="fab fa-dev "></i>
                     </span>
                   </li>
                 </Link>

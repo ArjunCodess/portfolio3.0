@@ -107,7 +107,7 @@ const skills = [
 function page() {
   return (
     <div className="lg:h-screen">
-      <div className="w-full absolute inset-0 h-screen">
+      <div className="w-full absolute inset-0 h-screen -z-10">
           <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"

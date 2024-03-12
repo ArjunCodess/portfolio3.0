@@ -9,8 +9,6 @@ export const HoverEffect = ({
   items: {
     name: string;
     description: string;
-    link: string;
-    rating: string;
     designation: string;
     id: number;
   }[];
@@ -51,7 +49,6 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <Cardname>{item.name} ({item.designation})</Cardname>
-            <p className="dark:text-white light:text-black text-black">Rating: {item.rating}/5.0</p>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </div>
@@ -103,7 +100,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-5 mb-3 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
