@@ -345,31 +345,6 @@ function Home() {
           {/* Marque texts */}
 
           <div>
-            <div className="marquee mb-10 mt-14 h-10 relative  max-w-6xl overflow-x-hidden">
-              <div className=" bg-gradient-to-r absolute z-10  to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
-              <motion.div
-                className="track"
-                variants={marqueeVariants}
-                animate="animate"
-              >
-                <div className=" flex gap-x-5 mt-2 uppercase font-bold justify-evenly text-sm  text-neutral-700">
-                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                  REVIEWS ✦ HERE&apos;S WHAT THEY SAY ✦ TESTIMONIALS ✦
-                </div>
-              </motion.div>
-              <div className=" bg-gradient-to-l absolute right-0 z-10 to-transparent w-16 rounded-md h-9 transition-all ease-in duration-200" />
-            </div>
-          </div>
-          
-          {/* testimonials component */}
-          <Testimonials />
-
-          {/* Marque texts */}
-
-          <div>
             <div className="marquee mb-10 mt-10 h-10 relative  max-w-6xl overflow-x-hidden">
               <div className=" bg-gradient-to-r absolute z-10  to-transparent w-20 rounded-md h-9 transition-all ease-in duration-200" />
               <motion.div

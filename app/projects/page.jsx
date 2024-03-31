@@ -48,11 +48,11 @@ const projectData = [
         liveLink: "https://thinktanktrivia.vercel.app/"
     },
     {
-        title: "Dropbox 2.0",
-        subtitle: "The Next.js Cloud Storage Platform is an online file storage and sharing application designed to provide users with a seamless and secure experience for managing their digital assets.",
+        title: "Apple iPhone Product Clone",
+        subtitle: "Clone of Apple's iPhone 15 Pro Product website using React.js, TailwindCSS, GSAP for sleek animations and Three.js for displaying the phone model.",
         imgLink: project5,
-        codeLink: "https://github.com/ArjunCodess/dropbox-2.0",
-        liveLink: "https://dropbox-2-0-arjuncodess.vercel.app/"
+        codeLink: "https://github.com/ArjunCodess/iPhone-15-Pro-Product-Page-GSAP",
+        liveLink: "https://iphone-page-arjuncodess.vercel.app/"
     },
     {
         title: "PriceTrackr",

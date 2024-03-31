@@ -1,7 +1,9 @@
 import Theming from '../theme/Theming';
 import Header from '../components/Navbar';
 import Footer from '../components/Footer';
-import { SparklesCore } from "../components/ui/sparkles";
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,6 +22,8 @@ export default function RootLayout({ children }) {
         <Theming>
           <Header />
           {children}
+          <SpeedInsights />
+          <Analytics />
           <Footer />
         </Theming>
       </body>
